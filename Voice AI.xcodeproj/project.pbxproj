@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		37B62E862BAC2FB600A9CF32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B62E852BAC2FB600A9CF32 /* AppDelegate.swift */; };
 		37B62E882BAC2FB600A9CF32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B62E872BAC2FB600A9CF32 /* SceneDelegate.swift */; };
-		37B62E8A2BAC2FB600A9CF32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B62E892BAC2FB600A9CF32 /* ViewController.swift */; };
-		37B62E8D2BAC2FB600A9CF32 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 37B62E8C2BAC2FB600A9CF32 /* Base */; };
+		37B62E8A2BAC2FB600A9CF32 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B62E892BAC2FB600A9CF32 /* HomeController.swift */; };
 		37B62E8F2BAC2FC400A9CF32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B62E8E2BAC2FC400A9CF32 /* Assets.xcassets */; };
 		37B62E922BAC2FC400A9CF32 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 37B62E912BAC2FC400A9CF32 /* Base */; };
+		37B62EA52BAC345A00A9CF32 /* AISpeechView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B62EA42BAC345A00A9CF32 /* AISpeechView.swift */; };
+		37B62EA82BAC3FA900A9CF32 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 37B62EA72BAC3FA900A9CF32 /* SnapKit */; };
+		37B62EAA2BAC3FA900A9CF32 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 37B62EA92BAC3FA900A9CF32 /* SnapKit-Dynamic */; };
+		37B62EAD2BAF237B00A9CF32 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B62EAC2BAF237B00A9CF32 /* CategoryCollectionViewCell.swift */; };
+		37B62EB12BAF4D9D00A9CF32 /* TabBarMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B62EB02BAF4D9D00A9CF32 /* TabBarMenuViewController.swift */; };
+		37B62EB32BB025EB00A9CF32 /* VoiceSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B62EB22BB025EB00A9CF32 /* VoiceSources.swift */; };
+		37B62EB52BB028A000A9CF32 /* AIVoicesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B62EB42BB028A000A9CF32 /* AIVoicesCollectionView.swift */; };
+		37B62EB72BB029E800A9CF32 /* AIVoicesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B62EB62BB029E800A9CF32 /* AIVoicesCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		37B62E822BAC2FB600A9CF32 /* Voice AI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Voice AI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B62E852BAC2FB600A9CF32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37B62E872BAC2FB600A9CF32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		37B62E892BAC2FB600A9CF32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		37B62E8C2BAC2FB600A9CF32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		37B62E892BAC2FB600A9CF32 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		37B62E8E2BAC2FC400A9CF32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37B62E912BAC2FC400A9CF32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37B62E932BAC2FC400A9CF32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37B62EA42BAC345A00A9CF32 /* AISpeechView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AISpeechView.swift; sourceTree = "<group>"; };
+		37B62EAC2BAF237B00A9CF32 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		37B62EB02BAF4D9D00A9CF32 /* TabBarMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarMenuViewController.swift; sourceTree = "<group>"; };
+		37B62EB22BB025EB00A9CF32 /* VoiceSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceSources.swift; sourceTree = "<group>"; };
+		37B62EB42BB028A000A9CF32 /* AIVoicesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIVoicesCollectionView.swift; sourceTree = "<group>"; };
+		37B62EB62BB029E800A9CF32 /* AIVoicesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIVoicesCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37B62EA82BAC3FA900A9CF32 /* SnapKit in Frameworks */,
+				37B62EAA2BAC3FA900A9CF32 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +70,84 @@
 		37B62E842BAC2FB600A9CF32 /* Voice AI */ = {
 			isa = PBXGroup;
 			children = (
+				37B62E992BAC336200A9CF32 /* Sources */,
+				37B62E9F2BAC33AC00A9CF32 /* Resources */,
+			);
+			path = "Voice AI";
+			sourceTree = "<group>";
+		};
+		37B62E992BAC336200A9CF32 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				37B62E9E2BAC339F00A9CF32 /* Delegates */,
+				37B62E9A2BAC337000A9CF32 /* Main */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		37B62E9A2BAC337000A9CF32 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				37B62E9D2BAC339600A9CF32 /* Model */,
+				37B62E9C2BAC339000A9CF32 /* View */,
+				37B62E9B2BAC338600A9CF32 /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		37B62E9B2BAC338600A9CF32 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				37B62EB02BAF4D9D00A9CF32 /* TabBarMenuViewController.swift */,
+				37B62E892BAC2FB600A9CF32 /* HomeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		37B62E9C2BAC339000A9CF32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				37B62EA42BAC345A00A9CF32 /* AISpeechView.swift */,
+				37B62EAB2BAF235B00A9CF32 /* Cell */,
+				37B62EB42BB028A000A9CF32 /* AIVoicesCollectionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		37B62E9D2BAC339600A9CF32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				37B62EB22BB025EB00A9CF32 /* VoiceSources.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		37B62E9E2BAC339F00A9CF32 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
 				37B62E852BAC2FB600A9CF32 /* AppDelegate.swift */,
 				37B62E872BAC2FB600A9CF32 /* SceneDelegate.swift */,
-				37B62E892BAC2FB600A9CF32 /* ViewController.swift */,
-				37B62E8B2BAC2FB600A9CF32 /* Main.storyboard */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		37B62E9F2BAC33AC00A9CF32 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				37B62E8E2BAC2FC400A9CF32 /* Assets.xcassets */,
 				37B62E902BAC2FC400A9CF32 /* LaunchScreen.storyboard */,
 				37B62E932BAC2FC400A9CF32 /* Info.plist */,
 			);
-			path = "Voice AI";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		37B62EAB2BAF235B00A9CF32 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				37B62EAC2BAF237B00A9CF32 /* CategoryCollectionViewCell.swift */,
+				37B62EB62BB029E800A9CF32 /* AIVoicesCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +166,10 @@
 			dependencies = (
 			);
 			name = "Voice AI";
+			packageProductDependencies = (
+				37B62EA72BAC3FA900A9CF32 /* SnapKit */,
+				37B62EA92BAC3FA900A9CF32 /* SnapKit-Dynamic */,
+			);
 			productName = "Voice AI";
 			productReference = 37B62E822BAC2FB600A9CF32 /* Voice AI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +198,9 @@
 				Base,
 			);
 			mainGroup = 37B62E792BAC2FB600A9CF32;
+			packageReferences = (
+				37B62EA62BAC3FA900A9CF32 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 37B62E832BAC2FB600A9CF32 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +217,6 @@
 			files = (
 				37B62E8F2BAC2FC400A9CF32 /* Assets.xcassets in Resources */,
 				37B62E922BAC2FC400A9CF32 /* Base in Resources */,
-				37B62E8D2BAC2FB600A9CF32 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +227,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37B62E8A2BAC2FB600A9CF32 /* ViewController.swift in Sources */,
+				37B62EAD2BAF237B00A9CF32 /* CategoryCollectionViewCell.swift in Sources */,
+				37B62E8A2BAC2FB600A9CF32 /* HomeController.swift in Sources */,
+				37B62EB32BB025EB00A9CF32 /* VoiceSources.swift in Sources */,
+				37B62EB72BB029E800A9CF32 /* AIVoicesCollectionViewCell.swift in Sources */,
 				37B62E862BAC2FB600A9CF32 /* AppDelegate.swift in Sources */,
+				37B62EB52BB028A000A9CF32 /* AIVoicesCollectionView.swift in Sources */,
+				37B62EA52BAC345A00A9CF32 /* AISpeechView.swift in Sources */,
 				37B62E882BAC2FB600A9CF32 /* SceneDelegate.swift in Sources */,
+				37B62EB12BAF4D9D00A9CF32 /* TabBarMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		37B62E8B2BAC2FB600A9CF32 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				37B62E8C2BAC2FB600A9CF32 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		37B62E902BAC2FC400A9CF32 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,10 +381,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YT7499CZXL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Voice AI/Info.plist";
+				INFOPLIST_FILE = "Voice AI/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,10 +409,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YT7499CZXL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Voice AI/Info.plist";
+				INFOPLIST_FILE = "Voice AI/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,6 +450,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		37B62EA62BAC3FA900A9CF32 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		37B62EA72BAC3FA900A9CF32 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37B62EA62BAC3FA900A9CF32 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		37B62EA92BAC3FA900A9CF32 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37B62EA62BAC3FA900A9CF32 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 37B62E7A2BAC2FB600A9CF32 /* Project object */;
 }
