@@ -39,6 +39,15 @@ class AISpeechView: UIView {
         return label
     }()
 
+    private lazy var buttonSeeAll: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("See all ->", for: .normal)
+        button.backgroundColor = .black
+        button.setTitleColor(.white, for: .normal)
+
+        return button
+    }()
+
     private lazy var collectionView: UICollectionView = {
         let categoryLayout = UICollectionViewFlowLayout()
         categoryLayout.minimumInteritemSpacing = 20
@@ -55,7 +64,55 @@ class AISpeechView: UIView {
 
         return collectionView
     }()
+    
+    private lazy var stackView1: UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .horizontal
+        stackView.alignment = .center
+        stackView.spacing = 10
+        stackView.distribution = .fillEqually
+        let image1 = UIImageView(image: UIImage(named: "image"))
+        image1.layer.cornerRadius = 20
+        let image2 = UIImageView(image: UIImage(named: "image"))
+        image2.layer.cornerRadius = 20
+        let image3 = UIImageView(image: UIImage(named: "image"))
+        image3.layer.cornerRadius = 20
+        stackView.addArrangedSubview(image1)
+        stackView.addArrangedSubview(image2)
+        stackView.addArrangedSubview(image3)
 
+        return stackView
+    }()
+
+    private lazy var stackView2: UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .horizontal
+        stackView.alignment = .center
+        stackView.spacing = 10
+        stackView.distribution = .fillEqually
+        let image1 = UIImageView(image: UIImage(named: "image"))
+        image1.layer.cornerRadius = 20
+        let image2 = UIImageView(image: UIImage(named: "image"))
+        image2.layer.cornerRadius = 20
+        let image3 = UIImageView(image: UIImage(named: "image"))
+        image3.layer.cornerRadius = 20
+        stackView.addArrangedSubview(image1)
+        stackView.addArrangedSubview(image2)
+        stackView.addArrangedSubview(image3)
+
+        return stackView
+    }()
+
+    private lazy var button: UIButton = {
+        let button = UIButton(type: .system)
+        button.backgroundColor = UIColor(named: "MainColor")
+        button.setTitle("Create", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.titleLabel?.font = .boldSystemFont(ofSize: 22)
+        button.layer.cornerRadius = 30
+
+        return button
+    }()
 
 //MARK: - Lifecycle App
     override init(frame: CGRect) {
@@ -71,13 +128,18 @@ class AISpeechView: UIView {
     private func setupUI() {
         addSubview(textField)
         addSubview(label)
+        addSubview(buttonSeeAll)
         addSubview(collectionView)
+        addSubview(stackView1)
+        addSubview(stackView2)
+        addSubview(button)
+
     }
 
 //MARK: - Constraints
     private func constraintsUI() {
         textField.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(100)
+            make.top.equalToSuperview().offset(150)
             make.left.equalToSuperview().offset(20)
             make.right.equalToSuperview().offset(-20)
             make.height.equalTo(100)
@@ -88,12 +150,34 @@ class AISpeechView: UIView {
             make.left.equalToSuperview().offset(20)
             make.height.equalTo(30)
         }
-
+        buttonSeeAll.snp.makeConstraints { make in
+            make.top.equalTo(textField.snp.bottom).offset(40)
+            make.right.equalToSuperview().offset(-20)
+            make.height.equalTo(20)
+        }
         collectionView.snp.makeConstraints { make in
             make.top.equalTo(label.snp.bottom).offset(10)
             make.left.equalToSuperview().offset(30)
-            make.right.equalToSuperview().offset(-20)
+            make.right.equalToSuperview().offset(0)
             make.height.equalTo(40)
+        }
+        stackView1.snp.makeConstraints { make in
+            make.top.equalTo(collectionView.snp.bottom).offset(15)
+            make.left.equalToSuperview().offset(20)
+            make.right.equalToSuperview().offset(-20)
+            make.height.equalTo(100)
+        }
+        stackView2.snp.makeConstraints { make in
+            make.top.equalTo(stackView1.snp.bottom).offset(35)
+            make.left.equalToSuperview().offset(20)
+            make.right.equalToSuperview().offset(-20)
+            make.height.equalTo(100)
+        }
+        button.snp.makeConstraints { make in
+            make.top.equalTo(stackView2.snp.bottom).offset(55)
+            make.left.equalToSuperview().offset(10)
+            make.right.equalToSuperview().offset(-10)
+            make.height.equalTo(60)
         }
     }
 }

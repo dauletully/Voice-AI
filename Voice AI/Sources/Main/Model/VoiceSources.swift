@@ -19,13 +19,13 @@ struct Voices: Hashable {
 extension Voices {
     static var elements: [[Voices]] = [
         [
-            Voices(title: "Politician", image: UIImage(named: "") ?? UIImage()),
-            Voices(title: "Podcast", image: UIImage(named: "") ?? UIImage()),
-            Voices(title: "Singer", image: UIImage(named: "") ?? UIImage()),
-            Voices(title: "Rapper", image: UIImage(named: "") ?? UIImage()),
-            Voices(title: "Pop Star", image: UIImage(named: "") ?? UIImage()),
-            Voices(title: "Press", image: UIImage(named: "") ?? UIImage()),
-            Voices(title: "Singer", image: UIImage(named: "") ?? UIImage())
+            Voices(title: "Politician", image: UIImage(named: "image") ?? UIImage()),
+            Voices(title: "Podcast", image: UIImage(named: "image") ?? UIImage()),
+            Voices(title: "Singer", image: UIImage(named: "image") ?? UIImage()),
+            Voices(title: "Rapper", image: UIImage(named: "image") ?? UIImage()),
+            Voices(title: "Pop Star", image: UIImage(named: "image") ?? UIImage()),
+            Voices(title: "Press", image: UIImage(named: "image") ?? UIImage()),
+            Voices(title: "Singer", image: UIImage(named: "image") ?? UIImage())
         ]
     ]
 }

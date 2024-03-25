@@ -19,6 +19,9 @@ class HomeController: UIViewController {
     private func setup() {
         speechView.delegate = self
         navigationController?.navigationBar.prefersLargeTitles = true
+        title = "Voice AI"
+        view.backgroundColor = .systemBackground
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
 
 }

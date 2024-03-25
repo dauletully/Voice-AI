@@ -6,9 +6,13 @@
 //
 
 import UIKit
+import SnapKit
 
-class AIVoicesCollectionViewCell: UICollectionViewCell {
-    
+final class AIVoicesCollectionViewCell: UICollectionViewCell {
+
+    static let identifierVoices = "voiceCell"
+
+    //MARK: - UI elemnts
     private lazy var voiceIamge: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
@@ -26,9 +30,35 @@ class AIVoicesCollectionViewCell: UICollectionViewCell {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        setupUI()
+        setupConstraints()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+
+    //MARK: - Setup
+    private func setupUI() {
+        addSubview(voiceIamge)
+        addSubview(voiceTitle)
+        self.clipsToBounds = true
+    }
+    private func setupConstraints() {
+        voiceIamge.snp.makeConstraints { make in
+            make.height.equalToSuperview().multipliedBy(0.7)
+            make.top.right.left.equalToSuperview()
+        }
+
+        voiceTitle.snp.makeConstraints { make in
+            make.top.equalTo(voiceIamge.snp.bottom).offset(14)
+            make.right.left.equalToSuperview()
+        }
+    }
+
+    //MARK: - Configure cells
+    public func configureCell(_ image: UIImage, _ title: String) {
+        self.voiceIamge.image = image
+        self.voiceTitle.text = title
     }
 }

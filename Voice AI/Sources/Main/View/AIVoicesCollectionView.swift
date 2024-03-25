@@ -9,9 +9,12 @@ import UIKit
 
 final class AIVoicesCollectionView: UIView {
 
+    private lazy var source = Voices.elements
+//MARK: - Collection view
     private lazy var collectionView: UICollectionView = {
         let layout = createLayout()
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.register(AIVoicesCollectionViewCell.self, forCellWithReuseIdentifier: AIVoicesCollectionViewCell.identifierVoices)
         collectionView.dataSource = self
         collectionView.delegate = self
         return collectionView
@@ -19,9 +22,15 @@ final class AIVoicesCollectionView: UIView {
    
     override init(frame: CGRect) {
         super.init(frame: frame)
-
+       addSubview(collectionView)
+        setupConstraints()
     }
-    
+    private func setupConstraints() {
+        collectionView.snp.makeConstraints { make in
+            make.top.equalToSuperview()
+            make.right.left.bottom.equalToSuperview()
+        }
+    }
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -78,13 +87,18 @@ final class AIVoicesCollectionView: UIView {
 
 extension AIVoicesCollectionView: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        <#code#>
+        return source[section].count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
+        let model = source[indexPath.section][indexPath.item]
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AIVoicesCollectionViewCell.identifierVoices,
+                                                            for: indexPath) as? AIVoicesCollectionViewCell else {return UICollectionViewCell()}
+        cell.configureCell(model.image, model.title)
+
+        return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        <#code#>
+        print(indexPath.row)
     }
 }
